@@ -102,12 +102,14 @@
   height: 350px;
   background-color: var(--Yelloe);
   display: block;
+  animation: fadeIn 1.1s ease-in forwards;
 }
 
 .hero-left-animation {
   position: absolute;
   top: 110px;
-  right: 146px;
+  right: -117px;
+  animation: slideInLeft 1s ease-out forwards;
 }
 
 .hero-btn {
@@ -149,6 +151,7 @@
   object-fit: cover;
   position: absolute;
   top: -36px;
+  animation: fadeIn 0.7s ease-in forwards;  
 }
 
 .yellow-back::before {
@@ -159,6 +162,7 @@
   left: 50px;
   content: "";
   background-color: var(--Yelloe);
+  animation: fadeIn 0.90s ease-in forwards;
 }
 
 .cust-row {
