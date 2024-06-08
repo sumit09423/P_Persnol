@@ -45,12 +45,16 @@
 .cust-navigation .nav-item .nav-link {
   font-size: 12px;
   color: #13181a;
-  padding-right: 40px;
+  padding-right: 60px;
   cursor: pointer;
 }
 
 .cust-menu {
   width: 45% !important;
+}
+
+.cust-hamburger .nav-link {
+  padding: 0px !important;
 }
 
 .navbar {
@@ -68,7 +72,7 @@
 
 .hero-img {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -83,19 +87,37 @@
 }
 
 .hero-title {
-  font-size: 115px;
-  line-height: 116px;
+  font-size: 120px;
+  line-height: 100px;
   position: relative;
 }
 
-.hero-title::before {
+.circle-span::before {
   content: "";
   position: absolute;
   border-radius: 50%;
-  left: 250px;
-  top: -120px;
-  width: 300px;
-  height: 300px;
+  left: 96px;
+  top: -118px;
+  width: 350px;
+  height: 350px;
   background-color: var(--Yelloe);
   display: block;
+}
+
+.hero-left-animation {
+  position: absolute;
+  top: 110px;
+  right: 146px;
+}
+
+.hero-btn {
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 0.4em;
+  font-size: 16px;
+  text-align: center;
+  background-color: var(--btn);
+  padding: 18px 29px;
+  text-decoration: none;
 }
